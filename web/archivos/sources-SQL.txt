@@ -1,0 +1,13 @@
+Consulta para obtener tabla completa:
+
+SELECT cabecera.cliente_p, cabecera.sucursal_p, cabecera.oc_p, cabecera.fecha_p, cuerpo.cod_p, cuerpo.cantFact_p
+FROM cabecera INNER JOIN cuerpo ON cabecera.nro_p = cuerpo.nro_p;
+
+
+Codigo para las fechas:
+
+        Date hoy = new Date();
+        Calendar cA = Calendar.getInstance();
+        cA.setTime(hoy);
+        int year = cA.get(Calendar.YEAR);
+
