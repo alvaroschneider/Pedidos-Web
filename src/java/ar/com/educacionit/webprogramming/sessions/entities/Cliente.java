@@ -35,7 +35,7 @@ public class Cliente {
         ArrayList clientes = new ArrayList();
 
         // Construye la query
-        String laConsulta = "SELECT distinct razonsocial, cliente FROM danone.clientes\n" +
+        String laConsulta = "SELECT distinct razonsocial, cliente FROM clientes\n" +
                             "where region='GBA';";
 
         // Ejecuta la query
