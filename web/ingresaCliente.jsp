@@ -36,8 +36,8 @@
     if (request.getParameter("accion") != null && request.getParameter("accion").equals("check")) {
         //System.out.println(request.getParameter("accion"));
 
-        rs = rCliente.getRS("/home/alvaro/Dropbox/NetBeansProjects/WebPedidosADA/web/archivos/maestroClientes.xls", Integer.parseInt(request.getParameter("cliente")), Integer.parseInt(request.getParameter("sucursal")));
-        localidad = rCliente.getLocalidad("/home/alvaro/Dropbox/NetBeansProjects/WebPedidosADA/web/archivos/maestroClientes.xls", Integer.parseInt(request.getParameter("cliente")), Integer.parseInt(request.getParameter("sucursal")));
+        rs = rCliente.getRS("/home/alvaro/Dropbox/NetBeansProjects/GestorDePedidos-Web/web/archivos/maestroClientes.xls", Integer.parseInt(request.getParameter("cliente")), Integer.parseInt(request.getParameter("sucursal")));
+        localidad = rCliente.getLocalidad("/home/alvaro/Dropbox/NetBeansProjects/GestorDePedidos-Web/web/archivos/maestroClientes.xls", Integer.parseInt(request.getParameter("cliente")), Integer.parseInt(request.getParameter("sucursal")));
 
     }
 
